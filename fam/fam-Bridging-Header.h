@@ -9,6 +9,7 @@
 #ifndef fam_Bridging_Header_h
 #define fam_Bridging_Header_h
 
-#import "XYPieChart.h"
+#import "VBPieChart.h"
+#import "UIColor+HexColor.h"
 
 #endif /* fam_Bridging_Header_h */

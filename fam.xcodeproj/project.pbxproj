@@ -12,7 +12,9 @@
 		6B5855541FABC67200D44275 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5855531FABC67200D44275 /* DashboardViewController.swift */; };
 		6B5855561FAE1D3B00D44275 /* AuthorizedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5855551FAE1D3B00D44275 /* AuthorizedUser.swift */; };
 		6B58555B1FAE8F8700D44275 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B58555A1FAE8F6700D44275 /* QuartzCore.framework */; };
-		6B58555F1FAE8FD700D44275 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B58555E1FAE8FD700D44275 /* XYPieChart.m */; };
+		6B62F7A31FAE9EF70061405E /* VBPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B62F79C1FAE9EF50061405E /* VBPieChart.m */; };
+		6B62F7A41FAE9EF70061405E /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B62F7A01FAE9EF60061405E /* UIColor+HexColor.m */; };
+		6B62F7A51FAE9EF70061405E /* VBPiePiece.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B62F7A11FAE9EF60061405E /* VBPiePiece.m */; };
 		6BDC8F181FA92FEA009FF5C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDC8F171FA92FEA009FF5C5 /* AppDelegate.swift */; };
 		6BDC8F1A1FA92FEA009FF5C5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDC8F191FA92FEA009FF5C5 /* FirstViewController.swift */; };
 		6BDC8F1C1FA92FEA009FF5C5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDC8F1B1FA92FEA009FF5C5 /* SecondViewController.swift */; };
@@ -30,8 +32,13 @@
 		6B5855551FAE1D3B00D44275 /* AuthorizedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizedUser.swift; sourceTree = "<group>"; };
 		6B5855591FAE813400D44275 /* fam-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fam-Bridging-Header.h"; sourceTree = "<group>"; };
 		6B58555A1FAE8F6700D44275 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		6B58555D1FAE8FD700D44275 /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
-		6B58555E1FAE8FD700D44275 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
+		6B62F79C1FAE9EF50061405E /* VBPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBPieChart.m; sourceTree = "<group>"; };
+		6B62F79D1FAE9EF50061405E /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
+		6B62F79E1FAE9EF60061405E /* VBPiePiece_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBPiePiece_private.h; sourceTree = "<group>"; };
+		6B62F79F1FAE9EF60061405E /* VBPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBPieChart.h; sourceTree = "<group>"; };
+		6B62F7A01FAE9EF60061405E /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
+		6B62F7A11FAE9EF60061405E /* VBPiePiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBPiePiece.m; sourceTree = "<group>"; };
+		6B62F7A21FAE9EF70061405E /* VBPiePiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBPiePiece.h; sourceTree = "<group>"; };
 		6BDC8F141FA92FEA009FF5C5 /* fam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BDC8F171FA92FEA009FF5C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BDC8F191FA92FEA009FF5C5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -66,13 +73,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		6B58555C1FAE8FD700D44275 /* XYPieChart */ = {
+		6B62F79B1FAE9EDC0061405E /* VBPieChart */ = {
 			isa = PBXGroup;
 			children = (
-				6B58555D1FAE8FD700D44275 /* XYPieChart.h */,
-				6B58555E1FAE8FD700D44275 /* XYPieChart.m */,
+				6B62F79D1FAE9EF50061405E /* UIColor+HexColor.h */,
+				6B62F7A01FAE9EF60061405E /* UIColor+HexColor.m */,
+				6B62F79F1FAE9EF60061405E /* VBPieChart.h */,
+				6B62F79C1FAE9EF50061405E /* VBPieChart.m */,
+				6B62F79E1FAE9EF60061405E /* VBPiePiece_private.h */,
+				6B62F7A21FAE9EF70061405E /* VBPiePiece.h */,
+				6B62F7A11FAE9EF60061405E /* VBPiePiece.m */,
 			);
-			path = XYPieChart;
+			path = VBPieChart;
 			sourceTree = "<group>";
 		};
 		6BDC8F0B1FA92FEA009FF5C5 = {
@@ -96,7 +108,7 @@
 		6BDC8F161FA92FEA009FF5C5 /* fam */ = {
 			isa = PBXGroup;
 			children = (
-				6B58555C1FAE8FD700D44275 /* XYPieChart */,
+				6B62F79B1FAE9EDC0061405E /* VBPieChart */,
 				6B5855511FABAB9A00D44275 /* GoogleService-Info.plist */,
 				6BDC8F171FA92FEA009FF5C5 /* AppDelegate.swift */,
 				6BDC8F191FA92FEA009FF5C5 /* FirstViewController.swift */,
@@ -255,11 +267,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B17DDF41FAA12F3008086B1 /* LoginViewController.swift in Sources */,
+				6B62F7A41FAE9EF70061405E /* UIColor+HexColor.m in Sources */,
+				6B62F7A51FAE9EF70061405E /* VBPiePiece.m in Sources */,
 				6BDC8F1C1FA92FEA009FF5C5 /* SecondViewController.swift in Sources */,
 				6B5855541FABC67200D44275 /* DashboardViewController.swift in Sources */,
 				6B5855561FAE1D3B00D44275 /* AuthorizedUser.swift in Sources */,
+				6B62F7A31FAE9EF70061405E /* VBPieChart.m in Sources */,
 				6BDC8F181FA92FEA009FF5C5 /* AppDelegate.swift in Sources */,
-				6B58555F1FAE8FD700D44275 /* XYPieChart.m in Sources */,
 				6BDC8F1A1FA92FEA009FF5C5 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
